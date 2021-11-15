@@ -1,27 +1,6 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
-        # 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-        if True:
-            if True:
-                if True:
-                    print("(3/2) nested blocks")
-
-        statement0 = None
-        statement1 = None
-        statement2 = None
-        statement3 = None
-        statement4 = None
-        statement5 = None
-        statement6 = None
-        statement7 = None
-        statement8 = None
-        statement9 = None
-
-        if tilavuus > 0.0:
-            self.tilavuus = tilavuus
-        else:
-            # virheellinen, nollataan
-            self.tilavuus = 0.0
+        self.aseta_tilavuus(tilavuus)
 
         if alku_saldo < 0.0:
             # virheellinen, nollataan
@@ -32,6 +11,13 @@ class Varasto:
         else:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
+
+    def aseta_tilavuus(self, tilavuus):
+        if tilavuus > 0.0:
+            self.tilavuus = tilavuus
+        else:
+            # virheellinen, nollataan
+            self.tilavuus = 0.0
 
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
