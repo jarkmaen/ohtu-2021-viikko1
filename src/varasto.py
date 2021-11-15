@@ -1,5 +1,22 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
+        # 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        if True:
+            if True:
+                if True:
+                    print("(3/2) nested blocks")
+
+        statement0 = None
+        statement1 = None
+        statement2 = None
+        statement3 = None
+        statement4 = None
+        statement5 = None
+        statement6 = None
+        statement7 = None
+        statement8 = None
+        statement9 = None
+
         if tilavuus > 0.0:
             self.tilavuus = tilavuus
         else:
